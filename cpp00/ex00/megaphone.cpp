@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/23 12:12:15 by kqueiroz          #+#    #+#             */
-/*   Updated: 2026/03/23 12:56:13 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2026/03/23 16:57:06 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ int main(int argc, char **argv)
         std::string arg = argv[i];
         for (size_t j = 0; j < arg.size(); j++)
             std::cout << static_cast<char>(std::toupper(arg[j]));
-        if (i < argc - 1)
-            std::cout << " ";
     }
     std::cout << std::endl;
     return 0;
