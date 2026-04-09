@@ -23,12 +23,4 @@ fclean: clean
 
 re: fclean all
 
-VALGRIND_FLAGS = --leak-check=full \
-				 --show-leak-kinds=all \
-				 --track-origins=yes
-
-valgrind: $(NAME)
-	@echo "$(BLUE)Running with Valgrind...$(RESET)"
-	@valgrind $(VALGRIND_FLAGS) ./$(NAME) $(ARGS)
-
 .PHONY: all clean fclean re
