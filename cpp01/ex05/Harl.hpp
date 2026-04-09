@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/08 22:18:31 by kqueiroz          #+#    #+#             */
-/*   Updated: 2026/04/08 22:33:36 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2026/04/09 10:33:00 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 class Harl
 {
 private:
-    /* data */
     void debug(void);
     void info(void);
     void warning(void);
