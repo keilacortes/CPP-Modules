@@ -6,16 +6,15 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 17:38:25 by kqueiroz          #+#    #+#             */
-/*   Updated: 2026/05/11 18:39:44 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2026/06/16 19:13:45 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed()
+Fixed::Fixed() : fixed_val(0)
 {
     std::cout << "Default constructor called" << std::endl;
-    fixed_val = 0;
 }
 
 Fixed::Fixed(const Fixed &other)

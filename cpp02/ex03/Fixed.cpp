@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 18:42:41 by kqueiroz          #+#    #+#             */
-/*   Updated: 2026/06/02 20:49:39 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2026/06/16 19:18:07 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,8 @@ Fixed::Fixed(const float value)
     fixed_val = roundf(value * (1 << raw));
 }
 
-Fixed::Fixed()
+Fixed::Fixed() : fixed_val(0)
 {
-    fixed_val = 0;
 }
 
 Fixed::Fixed(const Fixed &other)

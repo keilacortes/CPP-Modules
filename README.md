@@ -20,3 +20,9 @@
 - Memory allocation
 - Pointers and references
 - Switch case
+### 🔹 Module 02
+- Ad-hoc polymorphism
+- Operator overloading
+- Orthodox Canonical Class Form
+- Fixed-point arithmetic
+- Binary Space Partitioning (BSP)
