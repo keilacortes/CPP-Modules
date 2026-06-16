@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 18:42:41 by kqueiroz          #+#    #+#             */
-/*   Updated: 2026/06/02 19:49:01 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2026/06/16 19:18:18 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,9 @@ Fixed::Fixed(const float value)
     fixed_val = roundf(value * (1 << raw));
 }
 
-Fixed::Fixed()
+Fixed::Fixed() : fixed_val(0)
 {
     std::cout << "Default constructor called" << std::endl;
-    fixed_val = 0;
 }
 
 Fixed::Fixed(const Fixed &other)
