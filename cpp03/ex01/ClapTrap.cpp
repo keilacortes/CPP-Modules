@@ -6,7 +6,7 @@
 /*   By: kqueiroz <kqueiroz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/10 20:01:41 by kqueiroz          #+#    #+#             */
-/*   Updated: 2026/06/16 19:43:39 by kqueiroz         ###   ########.fr       */
+/*   Updated: 2026/07/07 15:53:40 by kqueiroz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ ClapTrap::ClapTrap()
 ClapTrap::ClapTrap(const std::string &name) : name_(name),
                                         hitPoints_(10),
                                         energyPoints_(10),
-                                        atackDamage_(0)
+                                        attackDamage_(0)
 {
     std::cout << "ClapTrap name constructor called for "
               << name_
@@ -33,7 +33,7 @@ ClapTrap::ClapTrap(const ClapTrap& other)
     this->name_ = other.name_;
     this->hitPoints_ = other.hitPoints_;
     this->energyPoints_ = other.energyPoints_;
-    this->atackDamage_ = other.atackDamage_;
+    this->attackDamage_ = other.attackDamage_;
 }
 
 ClapTrap::~ClapTrap()
@@ -51,7 +51,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &other)
     this->name_ = other.name_;
     this->hitPoints_ = other.hitPoints_;
     this->energyPoints_ = other.energyPoints_;
-    this->atackDamage_ = other.atackDamage_;
+    this->attackDamage_ = other.attackDamage_;
     return (*this);
 }
 
@@ -61,7 +61,7 @@ void ClapTrap::attack(const std::string &target)
     {
         std::cout << "ClapTrap " << name_
                   << " attacks " << target << ", causing "
-                  << atackDamage_ << " points of damage!"
+                  << attackDamage_ << " points of damage!"
                   << std::endl;
         energyPoints_--;
     }
